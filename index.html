@@ -11,10 +11,15 @@
   </header>
   <main>
     <h2>Add Employee</h2>
-    <h2>Employees</h2>
     <form onsubmit="handleSubmit(event)">
+      <input data-testid="firstNameInput" type="text" placeholder="First Name">
+      <input data-testid="lastNameInput" type="text" placeholder="Last Name">
+      <input data-testid="idInput" type="text" placeholder="ID">
+      <input data-testid="titleInput" type="text" placeholder="Title">
+      <input data-testid="annualSalaryInput" type="number" placeholder="Annual Salary">
       <button data-testid="submitButton">Submit</button>
     </form>
+    <h2>Employees</h2>
   </main>
   <footer>
     <p>Total Monthly</p>
