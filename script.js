@@ -4,6 +4,7 @@ console.log('you got this, ashleigh!');
 function handleSubmit(event) {
     console.log('submitted');
     event.preventDefault();
+    
 
 //pull values from input
 let firstName = document.querySelector('#firstNameInput').value;
@@ -27,12 +28,24 @@ employeeTable.innerHTML += `
 
 
 //clear input form once submitted
-function clearInputs() {
-const formInputs = document.querySelectorAll('input');
-console.log('info cleared:', clearInputs);
-formInputs.forEach(singleInput => singleInput.value = '');
+//function clearInputs() {
+    //document.getElementById('firstNameInput').value='';
+    //document.getElementById('lastNameInput').value='';
+    //document.getElementById('idInput').value='';
+    //document.getElementById('titleInput').value='';
+    //document.getElementById('annualSalaryInput').value='';
+//}
+
+document.getElementById("Staff").reset();
 };
-};
+
+//function clearInputs() {
+    //document.getElementById('firstNameInput').value='';
+    //document.getElementById('lastNameInput').value='';
+    //document.getElementById('idInput').value='';
+    //document.getElementById('titleInput').value='';
+    //document.getElementById('annualSalaryInput').value='';
+//};
 
 function handleClickDelete(event) {
     const deleteRow = event.target.parentElement.parentElement;

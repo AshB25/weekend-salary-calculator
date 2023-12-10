@@ -12,7 +12,7 @@
   <main>
     <h2>Add Employee</h2>
     <div id="information">
-    <form onsubmit="handleSubmit(event)">
+    <form id="Staff" onsubmit="handleSubmit(event)">
       <input id="firstNameInput" data-testid="firstNameInput" type="text" placeholder="First Name">
       <input id="lastNameInput" data-testid="lastNameInput" type="text" placeholder="Last Name">
       <input id="idInput" data-testid="idInput" type="text" placeholder="ID">
@@ -29,7 +29,7 @@
           <th>ID</th>
           <th>Title</th>
           <th>Annual Salary</th>
-          <th></th>
+          <th>             </th>
         </tr>
       </thead>
       <tbody id="employeeInfo">

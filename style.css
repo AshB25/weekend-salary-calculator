@@ -7,8 +7,8 @@
 
 #newEmployees th {
     max-width: 900px;
+    box-sizing: border-box;
     border-style: solid;
-    border-width: 2px;
 }
 #employeeInfo td{
     max-width: 900px;
