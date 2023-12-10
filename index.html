@@ -11,13 +11,14 @@
   </header>
   <main>
     <h2>Add Employee</h2>
+    <div id="information">
     <form onsubmit="handleSubmit(event)">
       <input id="firstNameInput" data-testid="firstNameInput" type="text" placeholder="First Name">
       <input id="lastNameInput" data-testid="lastNameInput" type="text" placeholder="Last Name">
       <input id="idInput" data-testid="idInput" type="text" placeholder="ID">
       <input id="titleInput" data-testid="titleInput" type="text" placeholder="Title">
       <input id="annualSalaryInput" data-testid="annualSalaryInput" type="number" placeholder="Annual Salary">
-      <button data-testid="submitButton">Submit</button>
+      <input data-testid="submitButton" type="submit" value="Submit" />
     </form>
     <h2>Employees</h2>
     <table id="newEmployees">
@@ -32,20 +33,13 @@
         </tr>
       </thead>
       <tbody id="employeeInfo">
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
       </tbody>
     </table>
+    </div>
   </main>
   <footer>
     <p>Total Monthly</p>
   </footer>
-  <script src="client.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

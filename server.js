@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 5001;
 
 // express static file serving - public is the folder name
-app.use(express.static('server/public'));
+app.use(express.static('server'));
 
 // Start up our server
 app.listen(port, () => {

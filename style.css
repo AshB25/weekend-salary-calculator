@@ -1,0 +1,17 @@
+/*styling employee table*/
+#information {
+    max-width: 900px;
+    margin: auto;
+    /*border-style: solid;*/
+}
+
+#newEmployees th {
+    max-width: 900px;
+    border-style: solid;
+    border-width: 2px;
+}
+#employeeInfo td{
+    max-width: 900px;
+    border-style: solid;
+    border-width: 1px;
+}
