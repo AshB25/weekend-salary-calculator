@@ -36,6 +36,7 @@ employeeTable.innerHTML += `
     //document.getElementById('annualSalaryInput').value='';
 //}
 
+totalMonthly();
 //clear inputs after submit
 document.getElementById("Staff").reset();
 };
@@ -48,12 +49,20 @@ function handleClickDelete(event) {
 }
 
 //calculate total
-let total = document.getElementsByClassName('getTotal');
-
-let calTotal = total.length;
-monthlyTotal = 0;
-
-for(let i = 0; i < calTotal; i++) {
-    monthlyTotal += total[i].value*1;
+//let total = 0;
+let annualSalarayTotal = document.getElementById("annualSalaryInput");
+let totalArray = [];
+function totalMonthly() {
+const newNumber = Number(annualSalarayTotal.value);
+console.log('Salaries;', newNumber);
+totalArray.push(newNumber);
+const total = totalArray.reduce((total, value) => total + value, 0);
+console.log(total);
+let Salaries = document.getElementById("Total");
+Salaries.innerHTML = `${total/12}`;
+if(total/12 > 20000) {
+    Salaries.classList.add('over-budget');
+let Budgets = document.getElementById("Budget");
+Budgets.classList.add('over-budget');
+} 
 }
-document.getElementById('Total');

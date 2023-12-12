@@ -1,4 +1,7 @@
 /*styling employee table*/
+h1 {
+    text-align: center;
+}
 #information {
     max-width: 900px;
     margin: auto;
@@ -14,4 +17,8 @@
     max-width: 900px;
     border-style: solid;
     border-width: 1px;
+}
+
+.over-budget {
+background-color: red;
 }
